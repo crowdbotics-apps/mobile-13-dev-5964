@@ -33,6 +33,13 @@ class CustomText(models.Model):
 
 class HomePage(models.Model):
     body = models.TextField()
+    werqwrf = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="homepage_werqwrf",
+    )
 
     @property
     def api(self):
