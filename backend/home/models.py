@@ -53,3 +53,10 @@ class HomePage(models.Model):
 class Ghvhggfgvcafvwse(models.Model):
     "Generated Model"
     adfvwftgbver = models.BigIntegerField()
+    sdfaef = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="ghvhggfgvcafvwse_sdfaef",
+    )

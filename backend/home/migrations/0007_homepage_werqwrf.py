@@ -9,13 +9,19 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('home', '0006_auto_20200613_0725'),
+        ("home", "0006_auto_20200613_0725"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='homepage',
-            name='werqwrf',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='homepage_werqwrf', to=settings.AUTH_USER_MODEL),
+            model_name="homepage",
+            name="werqwrf",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="homepage_werqwrf",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
     ]
